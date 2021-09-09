@@ -2,7 +2,21 @@
 
 
 
-let inct = 10,
-      decr = 10;
+const numberOfFilms = +prompt('How many moview have you seen?', 'enter a number');
 
-      console.log(2*4 === +'8');
+const personalMovieDatabase = {
+    count : numberOfFilms,
+    movies : {},
+    actors : {},
+    genre : [],
+    privat : false
+};
+
+for (let i = 0; i<=1; ++i) {
+    personalMovieDatabase.movies[prompt('The last sovn movie', 'name of movie')] = 
+                                                prompt('How would you rate it?', 'rate from 0 to 10');
+}
+
+
+console.log(personalMovieDatabase);
+
